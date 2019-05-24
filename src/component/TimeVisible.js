@@ -13,7 +13,6 @@ export default class TimeVisible extends Component {
 
     handleTime = () => {
         setTimeout(() => {
-            console.log(this)
             this.setState({
                 confirmVisible: true
             })

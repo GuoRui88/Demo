@@ -1,20 +1,19 @@
 import React, {Component} from 'react';
 import './App.css';
-import simpleHoc from './component/common'
 import TimeVisible from "./component/TimeVisible";
+import HocSub from './component/HocSub'
 
-class App extends Component {
+export default class App extends Component {
+
     render() {
         console.log(this.props, 'props')
         return (
             <>
-                <div>
-                    Usual
-                </div>
-                <TimeVisible ></TimeVisible>
+                <HocSub/>
+                <TimeVisible></TimeVisible>
+
+
             </>
         )
     }
 }
-
-export default simpleHoc(App);
